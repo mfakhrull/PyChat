@@ -19,7 +19,7 @@ def index():
 def handle_connect():
     username = f"User{random.randint(1000,9999)}"
     gender = random.choice(["girl", "boy"])
-    avatar_url = f"https//avatar.iran.liara.run/public{gender}.?username={username}"
+    avatar_url = f"https://avatar.iran.liara.run/public/{gender}?username={username}"
 
     users[request.sid] = {"username": username, "avatar": avatar_url}
 
